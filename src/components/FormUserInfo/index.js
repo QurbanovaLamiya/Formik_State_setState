@@ -15,11 +15,10 @@ class FormUserInfo extends Component {
           </thead>
           <tbody>
             <tr>
-              <td className="col-4">Mark</td>
-              <td className="col-4">Otto</td>
-              <td className="col-4">@mdo</td>
+              <td className="col-4 py-3">{this.props.userInfo?.fullName}</td>
+              <td className="col-4 py-3">{this.props.userInfo?.email}</td>
+              <td className="col-4 py-3">{this.props.userInfo?.password}</td>
             </tr>
-         
           </tbody>
         </Table>
       </Fragment>
